@@ -15,7 +15,7 @@ class CarMake(models.Model):
 
 
 class CarModel(models.Model):
-  name = models.CharField(max_length=50, name=False)
+  Name = models.CharField(max_length=50, name=False)
   year = models.IntegerField(default=2023 , validators=[
      MaxValueValidator(2023) ,
      MinValueValidator(2015)
